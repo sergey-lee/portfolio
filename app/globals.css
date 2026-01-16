@@ -3,6 +3,15 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Hide v0 badge/watermark globally */
+a[href^="https://v0.dev"],
+[data-testid="v0-badge"],
+.v0-badge {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
 :root {
   --background: oklch(0.13 0.015 240);
   --foreground: oklch(0.95 0.01 240);
